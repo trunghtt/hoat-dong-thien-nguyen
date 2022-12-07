@@ -1,0 +1,13 @@
+<?php
+    define('L0','');
+    define('L1','../');
+    define('L2','../../');
+    define('COMP','components/');
+    define('CSS','css/');
+    define('IMG','img/');
+    define('JS','js/');
+    define('LIB','lib/');
+    define('PAGE','pages/');
+    define('VEN','vendor/');
+    define('VIDEO','video/');
+?>

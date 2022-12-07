@@ -1,0 +1,9 @@
+<?php
+	include_once('config.php');
+	$level=L0;
+	$_hasSlideShow=true;
+	$_isPostIndex=true;
+	$_isPostDetail=false;
+    $_isPostSearch=false;
+	include_once($level.'layout.php');
+?>

@@ -1,0 +1,47 @@
+<html>
+<?php 
+	include_once($level.LIB."db.php");
+	include_once($level.COMP."layout_head.php");
+?>
+<body>
+<?php 
+	include_once($level.COMP."layout_topheader.php");
+	include_once($level.COMP."layout_menu.php");
+?>
+	<div class="container mt-4">
+		<?php
+			if($_hasSlideShow==true)
+			{
+				include_once($level.COMP."index_data.php");
+				include_once($level.COMP."index_slideshow.php");
+			}
+			if($_isPostIndex==true)
+			{
+				include_once($level.COMP."index_data.php");
+				include_once($level.COMP."index_toppost.php");
+				include_once($level.COMP."index_midpost.php");
+				include_once($level.COMP."index_endpost.php");
+				include_once($level.COMP."index_image.php");
+				include_once($level.COMP."index_video.php");
+			}
+			if($_isPostDetail==true)
+			{
+				include_once($level.COMP."detail_data.php");
+				include_once($level.COMP."detail_post.php");
+				include_once($level.COMP."detail_lienquan.php");
+				include_once($level.COMP."detail_binhluan.php");
+			}
+			if($_isPostSearch==true)
+			{
+				include_once($level.COMP."search_data.php");
+				include_once($level.COMP."search_post.php");
+			}
+		?>
+	</div>
+	<?php
+		include_once($level.COMP."layout_footer.php");
+		include_once($level.COMP."layout_script.php");
+	?>
+</body>
+</html>
+
